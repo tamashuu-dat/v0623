@@ -25,8 +25,8 @@ namespace v0623
         {
             Point spos = MousePosition;
             Point fpos = PointToClient(spos);
-            label3.Left = fpos.X+(label2.Left - label2.Right) / 2;
-            label3.Top = fpos.Y + (label2.Top - label2.Bottom) / 2;
+            label3.Left = fpos.X + (label3.Left - label3.Right) / 2;
+            label3.Top = fpos.Y + (label3.Top - label3.Bottom) / 2;
             label3.Text = $"{fpos.X},{fpos.Y}";
 
             label1.Left += vx;
