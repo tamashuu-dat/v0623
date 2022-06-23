@@ -15,6 +15,7 @@ namespace v0623
         int vx = -10;
         int vy = -10;
         int score = 100;
+        
         public Form1()
         {
             InitializeComponent();
@@ -22,6 +23,12 @@ namespace v0623
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            Point spos = MousePosition;
+            Point fpos = PointToClient(spos);
+            label3.Left = fpos.X+(label2.Left - label2.Right) / 2;
+            label3.Top = fpos.Y + (label2.Top - label2.Bottom) / 2;
+            label3.Text = $"{fpos.X},{fpos.Y}";
+
             label1.Left += vx;
             label1.Top += vy;
 
