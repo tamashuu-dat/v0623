@@ -23,6 +23,7 @@ namespace v0623
         {
             label1.Left += vx;
             label1.Top += vy;
+
             if(label1.Left<0)
             {
                 vx = -vx;
@@ -43,7 +44,7 @@ namespace v0623
 
         private void label1_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show ="玉井秀兵";
+            MessageBox.Show("玉井");
             timer1.Enabled = false;
         }
     }
